@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Color Generator</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #f1f1f1;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .color-box {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Background Color Generator</h1>
+  <form oninput="colorBox.style.backgroundColor = color.value">
+    <label for="color">Choose a color:</label>
+    <input type="color" id="color" name="color" value="red">
+  </form>
+  <div class="color-box" id="colorBox"></div>
+</div>
+</body>
+</html>
